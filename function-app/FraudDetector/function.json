@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "transactions",
+      "connection": "EventHubConnection",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "direction": "out",
+      "databaseName": "FraudDB",
+      "collectionName": "Transactions",
+      "connectionStringSetting": "CosmosDBConnection",
+      "createIfNotExists": false
+    }
+  ]
+}
