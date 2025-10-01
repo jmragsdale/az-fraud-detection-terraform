@@ -62,7 +62,7 @@ Edit `terraform.tfvars`:
 terraform destroy
 ```
 
-## Resume Talking Points
+## Talking Points
 
 - Real-time fraud detection processing 1000+ TPS
 - Zero-trust security with Azure Managed Identity
