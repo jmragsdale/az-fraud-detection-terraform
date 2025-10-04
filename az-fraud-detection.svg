@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 900"
+   width="1200"
+   height="900"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="az-fraud-detection.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.1839969"
+     inkscape:cx="580.66032"
+     inkscape:cy="439.61265"
+     inkscape:window-width="1728"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg54" />
+  <!-- Define styles -->
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .box { fill: #fff; stroke: #000; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; fill: #000; }
+      .title-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #000; }
+      .header { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #000; }
+      .line { stroke: #000; stroke-width: 2; fill: none; }
+      .arrow { fill: #000; }
+      .step-text { font-family: Arial, sans-serif; font-size: 12px; fill: #000; font-style: italic; }
+    </style>
+    <!-- Arrow marker -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3, 0 6"
+         class="arrow"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="600"
+     y="40"
+     text-anchor="middle"
+     class="header"
+     id="text1">Azure Real-Time Fraud Detection Architecture</text>
+  <text
+     x="600"
+     y="65"
+     text-anchor="middle"
+     style="font-size: 14px; fill: #666;"
+     id="text2">Event-Driven Fintech Transaction Processing</text>
+  <!-- Transaction Sources -->
+  <rect
+     x="100"
+     y="120"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect2" />
+  <text
+     x="240"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text3">Transaction Sources</text>
+  <text
+     x="240"
+     y="190"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text4">• Mobile banking app</text>
+  <text
+     x="240"
+     y="210"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text5">• Web payment gateway</text>
+  <text
+     x="240"
+     y="230"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text6">• ATM transactions</text>
+  <text
+     x="240"
+     y="250"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text7">• Third-party APIs</text>
+  <!-- Event Hubs -->
+  <rect
+     x="460"
+     y="120"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect7" />
+  <text
+     x="600"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text8">Azure Event Hubs</text>
+  <text
+     x="600"
+     y="175"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text9">Stream Ingestion</text>
+  <text
+     x="600"
+     y="205"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text10">• 1000+ TPS throughput</text>
+  <text
+     x="600"
+     y="225"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text11">• Partitioned streaming</text>
+  <text
+     x="600"
+     y="245"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text12">• Guaranteed delivery</text>
+  <!-- Arrow from Sources to Event Hubs -->
+  <line
+     x1="380"
+     y1="190"
+     x2="460"
+     y2="190"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line12" />
+  <text
+     x="382"
+     y="180"
+     class="step-text"
+     id="text13">Publish events</text>
+  <!-- Azure Functions -->
+  <rect
+     x="460"
+     y="320"
+     width="280"
+     height="200"
+     class="box"
+     rx="5"
+     id="rect13" />
+  <text
+     x="600"
+     y="355"
+     text-anchor="middle"
+     class="title-text"
+     id="text14">Azure Functions</text>
+  <text
+     x="600"
+     y="375"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text15">Fraud Detection Logic</text>
+  <!-- Fraud Rules inside Functions box -->
+  <rect
+     x="490"
+     y="400"
+     width="220"
+     height="100"
+     class="box"
+     rx="3"
+     id="rect15" />
+  <text
+     x="600"
+     y="425"
+     text-anchor="middle"
+     style="font-size: 11px; font-weight: bold;"
+     id="text16">Detection Rules:</text>
+  <text
+     x="600"
+     y="445"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text17">• High amount (&gt;$1000)</text>
+  <text
+     x="600"
+     y="465"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text18">• Velocity check (&gt;5 txns)</text>
+  <text
+     x="600"
+     y="485"
+     text-anchor="middle"
+     style="font-size: 10px;"
+     id="text19">• International location</text>
+  <!-- Arrow from Event Hubs to Functions -->
+  <line
+     x1="600"
+     y1="260"
+     x2="600"
+     y2="320"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line19" />
+  <text
+     x="620"
+     y="295"
+     class="step-text"
+     id="text20">Trigger function</text>
+  <!-- Cosmos DB -->
+  <rect
+     x="820"
+     y="320"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect20" />
+  <text
+     x="960"
+     y="355"
+     text-anchor="middle"
+     class="title-text"
+     id="text21">Azure Cosmos DB</text>
+  <text
+     x="960"
+     y="375"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text22">Transaction Storage</text>
+  <text
+     x="960"
+     y="405"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text23">• Transaction history</text>
+  <text
+     x="960"
+     y="425"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text24">• Fraud results</text>
+  <text
+     x="960"
+     y="445"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text25">• Global distribution</text>
+  <!-- Arrow from Functions to Cosmos DB -->
+  <line
+     x1="740"
+     y1="390"
+     x2="820"
+     y2="390"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line25" />
+  <text
+     x="752"
+     y="380"
+     class="step-text"
+     id="text26">Store data</text>
+  <!-- Alert System -->
+  <rect
+     x="100"
+     y="580"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect26" />
+  <text
+     x="240"
+     y="615"
+     text-anchor="middle"
+     class="title-text"
+     id="text27">Alert System</text>
+  <text
+     x="240"
+     y="650"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text28">• Email notifications</text>
+  <text
+     x="240"
+     y="670"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text29">• SMS alerts</text>
+  <text
+     x="240"
+     y="690"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text30">• Dashboard updates</text>
+  <text
+     x="240"
+     y="710"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text31">Fraud detected → Instant alert</text>
+  <!-- Arrow from Functions to Alerts -->
+  <line
+     x1="460"
+     y1="480"
+     x2="380"
+     y2="580"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line31" />
+  <text
+     x="344"
+     y="520"
+     class="step-text"
+     id="text32">Fraud detected</text>
+  <!-- Application Insights -->
+  <rect
+     x="460"
+     y="580"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect32" />
+  <text
+     x="600"
+     y="615"
+     text-anchor="middle"
+     class="title-text"
+     id="text33">Application Insights</text>
+  <text
+     x="600"
+     y="635"
+     text-anchor="middle"
+     style="font-size: 12px;"
+     id="text34">Monitoring  Analytics</text>
+  <text
+     x="600"
+     y="665"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text35">• Performance metrics</text>
+  <text
+     x="600"
+     y="685"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text36">• Error tracking</text>
+  <text
+     x="600"
+     y="705"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text37">• Fraud rate analytics</text>
+  <!-- Arrow from Functions to App Insights -->
+  <line
+     x1="600"
+     y1="520"
+     x2="600"
+     y2="580"
+     class="line"
+     marker-end="url(#arrowhead)"
+     id="line37" />
+  <text
+     x="620"
+     y="555"
+     class="step-text"
+     id="text38">Telemetry</text>
+  <!-- Security Components -->
+  <rect
+     x="820"
+     y="120"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect38" />
+  <text
+     x="960"
+     y="155"
+     text-anchor="middle"
+     class="title-text"
+     id="text39">Security Layer</text>
+  <!-- Key Vault -->
+  <rect
+     x="850"
+     y="180"
+     width="100"
+     height="60"
+     class="box"
+     rx="3"
+     id="rect39" />
+  <text
+     x="900"
+     y="205"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text40">Key Vault</text>
+  <text
+     x="900"
+     y="225"
+     text-anchor="middle"
+     style="font-size: 9px;"
+     id="text41">Secrets</text>
+  <!-- Managed Identity -->
+  <rect
+     x="970"
+     y="180"
+     width="100"
+     height="60"
+     class="box"
+     rx="3"
+     id="rect41" />
+  <text
+     x="1020"
+     y="205"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text42">Managed</text>
+  <text
+     x="1020"
+     y="225"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text43">Identity</text>
+  <!-- Arrow from Security to Functions -->
+  <line
+     x1="900"
+     y1="240"
+     x2="700"
+     y2="320"
+     class="line"
+     marker-end="url(#arrowhead)"
+     stroke-dasharray="5,5"
+     id="line43" />
+  <text
+     x="746.7937"
+     y="271.78287"
+     class="step-text"
+     style="font-size:9.93077px;stroke-width:0.993077"
+     id="text44"
+     transform="scale(1.0069716,0.99307671)">Zero-trust auth</text>
+  <!-- Compliance Box -->
+  <rect
+     x="820"
+     y="580"
+     width="280"
+     height="140"
+     class="box"
+     rx="5"
+     id="rect44" />
+  <text
+     x="960"
+     y="615"
+     text-anchor="middle"
+     class="title-text"
+     id="text45">Compliance</text>
+  <text
+     x="960"
+     y="650"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text46">• PCI-DSS standards</text>
+  <text
+     x="960"
+     y="670"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text47">• SOC 2 controls</text>
+  <text
+     x="960"
+     y="690"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text48">• Audit logging</text>
+  <text
+     x="960"
+     y="710"
+     text-anchor="middle"
+     style="font-size: 11px;"
+     id="text49">• Data encryption</text>
+  <!-- Infrastructure as Code Note -->
+  <rect
+     x="100"
+     y="760"
+     width="1000"
+     height="100"
+     class="box"
+     rx="5"
+     id="rect49" />
+  <text
+     x="600"
+     y="790"
+     text-anchor="middle"
+     class="title-text"
+     id="text50">Infrastructure as Code - Terraform</text>
+  <text
+     x="120"
+     y="820"
+     class="text"
+     style="font-size: 11px;"
+     id="text51">✓ <tspan
+   font-weight="bold"
+   id="tspan50">Automated Deployment:</tspan> ./scripts/deploy.sh provisions entire infrastructure</text>
+  <text
+     x="120"
+     y="840"
+     class="text"
+     style="font-size: 11px;"
+     id="text52">✓ <tspan
+   font-weight="bold"
+   id="tspan51">Configuration:</tspan> terraform.tfvars (alert_email, fraud_threshold: $1000, velocity_threshold: 5)</text>
+  <text
+     x="650"
+     y="820"
+     class="text"
+     style="font-size: 11px;"
+     id="text53">✓ <tspan
+   font-weight="bold"
+   id="tspan52">Cost:</tspan> ~$20-30/month dev usage</text>
+  <text
+     x="650"
+     y="840"
+     class="text"
+     style="font-size: 11px;"
+     id="text54">✓ <tspan
+   font-weight="bold"
+   id="tspan53">Cleanup:</tspan> terraform destroy</text>
+</svg>
