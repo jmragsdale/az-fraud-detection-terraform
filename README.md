@@ -1,4 +1,53 @@
-# Azure Real-Time Fraud Detection System
+<a id="azure-real-time-fraud-detection-system"></a>
+
+<a href="#setup-guide">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="Azure Fraud Detection. An Azure event-processing reference for transaction-rule research, with Terraform, a Functions handler and test-event scripts.">
+</picture>
+</a>
+
+<p>
+  <a href="#setup-guide"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="main.tf">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+An Azure event-processing reference for transaction-rule research, with Terraform, a Functions handler and test-event scripts.
+
+## Explore the project
+
+Open a card for source, examples or supporting documentation.
+
+<p>
+<a href="az-fraud-detection.svg">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/architecture-dark.png">
+  <img src="docs/assets/readme/architecture-light.png" width="360" alt="Follow the architecture. Review the components and the documented processing or access flow.">
+</picture>
+</a>
+<a href="main.tf">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Read the Terraform source. Inspect infrastructure declarations and their configuration inputs.">
+</picture>
+</a>
+<a href="function-app/FraudDetector/index.js">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/handler-dark.png">
+  <img src="docs/assets/readme/handler-light.png" width="360" alt="Inspect transaction rules. Review the Functions handler and its event-processing logic.">
+</picture>
+</a>
+<a href="scripts/test-transaction.sh">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/events-dark.png">
+  <img src="docs/assets/readme/events-light.png" width="360" alt="Review test-event scripts. Inspect the transaction-test script and the endpoint prerequisites.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 Real-time fraud detection for financial transactions using Azure Event Hubs, Functions, and Cosmos DB with Terraform IaC.
 
@@ -18,6 +67,8 @@ Real-time fraud detection for financial transactions using Azure Event Hubs, Fun
 ✅ Zero-trust security with Managed Identity  
 ✅ Infrastructure as Code with Terraform  
 ✅ PCI-DSS and SOC 2 compliance patterns  
+
+<a id="setup-guide"></a>
 
 ## Quick Start
 
@@ -68,3 +119,10 @@ terraform destroy
 - Zero-trust security with Azure Managed Identity
 - Event-driven architecture for fintech compliance
 - Infrastructure as Code with Terraform
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>

@@ -1,0 +1,77 @@
+{
+  "title": "Azure Fraud Detection",
+  "titleFontSize": 86,
+  "mobileTitle": [
+    "Azure fraud",
+    "detection"
+  ],
+  "eyebrow": "EVENT-PROCESSING SECURITY",
+  "tagline": "Inspect transaction-event rules.",
+  "mobileTagline": [
+    "Inspect transaction",
+    "event rules."
+  ],
+  "description": [
+    "An Event Hubs, Functions and Cosmos DB reference.",
+    "Terraform, rule-handling source and transaction examples."
+  ],
+  "mobileDescription": [
+    "Event Hubs, Functions and Cosmos DB.",
+    "Terraform, rule source and event examples."
+  ],
+  "footerLeft": "TERRAFORM",
+  "footerMiddle": "AZURE / EVENT PROCESSING",
+  "footerRight": "EVENT / RULE / RESULT",
+  "diagram": [
+    "EVENT",
+    "RULE",
+    "RESULT"
+  ],
+  "summary": "An Azure event-processing reference for transaction-rule research, with Terraform, a Functions handler and test-event scripts.",
+  "cards": [
+    {
+      "slug": "architecture",
+      "category": "ARCHITECTURE",
+      "title": "Follow the architecture",
+      "lines": [
+        "Review the components and the",
+        "documented processing or access flow."
+      ],
+      "footer": "DESIGN / REFERENCE FLOW",
+      "href": "az-fraud-detection.svg"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Read the Terraform source",
+      "lines": [
+        "Inspect infrastructure declarations",
+        "and their configuration inputs."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "main.tf"
+    },
+    {
+      "slug": "handler",
+      "category": "IMPLEMENTATION",
+      "title": "Inspect transaction rules",
+      "lines": [
+        "Review the Functions handler",
+        "and its event-processing logic."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "function-app/FraudDetector/index.js"
+    },
+    {
+      "slug": "events",
+      "category": "EXAMPLE WORKFLOW",
+      "title": "Review test-event scripts",
+      "lines": [
+        "Inspect the transaction-test script",
+        "and the endpoint prerequisites."
+      ],
+      "footer": "SCRIPT / EXAMPLE EVENTS",
+      "href": "scripts/test-transaction.sh"
+    }
+  ]
+}
